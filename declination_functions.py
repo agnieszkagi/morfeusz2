@@ -1,5 +1,4 @@
 #! python3
-import re
 import morfeusz2
 
 
@@ -50,5 +49,6 @@ def Get_Case(keyword):
     element = list_of_morphosyntactic_forms[0][2][2]
     case = element.split(':')[2].split('.')[0]
     return case
+
 
 print(Decline_Noun("sonda", Get_Case("pływaka")))
